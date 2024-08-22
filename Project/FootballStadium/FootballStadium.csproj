@@ -1,0 +1,655 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8E1CABCD-E0E5-4CA5-8143-E9B17D8FFF06}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>FootballStadium</RootNamespace>
+    <AssemblyName>FootballStadium</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Coachs\Controls\ctrlShowCoachInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Coachs\Controls\ctrlShowCoachInfo.Designer.cs">
+      <DependentUpon>ctrlShowCoachInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Coachs\frmShowCoachInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Coachs\frmShowCoachInfo.Designer.cs">
+      <DependentUpon>frmShowCoachInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bookings\frmListBookings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bookings\frmListBookings.Designer.cs">
+      <DependentUpon>frmListBookings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bookings\frmAddUpdateBooking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bookings\frmAddUpdateBooking.Designer.cs">
+      <DependentUpon>frmAddUpdateBooking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Championships\frmAddUpdateChampionship.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Championships\frmAddUpdateChampionship.Designer.cs">
+      <DependentUpon>frmAddUpdateChampionship.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Championships\frmListCurrentChampionships.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Championships\frmListCurrentChampionships.Designer.cs">
+      <DependentUpon>frmListCurrentChampionships.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChampionshipsEnrolledTeams\frmListTeamsInChampionship.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChampionshipsEnrolledTeams\frmListTeamsInChampionship.Designer.cs">
+      <DependentUpon>frmListTeamsInChampionship.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChampionshipsEnrolledTeams\frmAddTeamsToChampionship.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChampionshipsEnrolledTeams\frmAddTeamsToChampionship.Designer.cs">
+      <DependentUpon>frmAddTeamsToChampionship.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Championships\frmListEndetChampionships.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Championships\frmListEndetChampionships.Designer.cs">
+      <DependentUpon>frmListEndetChampionships.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Coachs\frmJoinCoachToTeam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Coachs\frmJoinCoachToTeam.Designer.cs">
+      <DependentUpon>frmJoinCoachToTeam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Coachs\frmListCoachs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Coachs\frmListCoachs.Designer.cs">
+      <DependentUpon>frmListCoachs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConstantBookings\frmListConstantBookings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConstantBookings\frmListConstantBookings.Designer.cs">
+      <DependentUpon>frmListConstantBookings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConstantBookings\frmAddUpdateConstantBooking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConstantBookings\frmAddUpdateConstantBooking.Designer.cs">
+      <DependentUpon>frmAddUpdateConstantBooking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\frmChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users\frmChangePassword.Designer.cs">
+      <DependentUpon>frmChangePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login\frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login\frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Teams\frmShowTeamInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Teams\frmShowTeamInfo.Designer.cs">
+      <DependentUpon>frmShowTeamInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Teams\Controls\ctrlShowTeamInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Teams\Controls\ctrlShowTeamInfo.Designer.cs">
+      <DependentUpon>ctrlShowTeamInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Winners\frmAddShowWinner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Winners\frmAddShowWinner.Designer.cs">
+      <DependentUpon>frmAddShowWinner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\frmAddUpdateUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users\frmAddUpdateUser.Designer.cs">
+      <DependentUpon>frmAddUpdateUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\frmListUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users\frmListUsers.Designer.cs">
+      <DependentUpon>frmListUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\Controls\ctrlShowUserInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Users\Controls\ctrlShowUserInfo.Designer.cs">
+      <DependentUpon>ctrlShowUserInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\frmShowUserInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users\frmShowUserInfo.Designer.cs">
+      <DependentUpon>frmShowUserInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Players\frmShowPlayerInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Players\frmShowPlayerInfo.Designer.cs">
+      <DependentUpon>frmShowPlayerInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Players\Controls\ctrlShowPlayerInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Players\Controls\ctrlShowPlayerInfo.Designer.cs">
+      <DependentUpon>ctrlShowPlayerInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Players\frmListPlayers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Players\frmListPlayers.Designer.cs">
+      <DependentUpon>frmListPlayers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Teams\frmListTeams.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Teams\frmListTeams.Designer.cs">
+      <DependentUpon>frmListTeams.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Players\frmAddUpdatePlayer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Players\frmAddUpdatePlayer.Designer.cs">
+      <DependentUpon>frmAddUpdatePlayer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Coachs\frmAddUpdateCoach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Coachs\frmAddUpdateCoach.Designer.cs">
+      <DependentUpon>frmAddUpdateCoach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global Classes\clsGlobal.cs" />
+    <Compile Include="Teams\frmAddUpdateTeam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Teams\frmAddUpdateTeam.Designer.cs">
+      <DependentUpon>frmAddUpdateTeam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Bookings\frmListBookings.resx">
+      <DependentUpon>frmListBookings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Championships\frmListCurrentChampionships.resx">
+      <DependentUpon>frmListCurrentChampionships.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Championships\frmListEndetChampionships.resx">
+      <DependentUpon>frmListEndetChampionships.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Coachs\frmAddUpdateCoach.resx">
+      <DependentUpon>frmAddUpdateCoach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Coachs\Controls\ctrlShowCoachInfo.resx">
+      <DependentUpon>ctrlShowCoachInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Coachs\frmJoinCoachToTeam.resx">
+      <DependentUpon>frmJoinCoachToTeam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Coachs\frmShowCoachInfo.resx">
+      <DependentUpon>frmShowCoachInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bookings\frmAddUpdateBooking.resx">
+      <DependentUpon>frmAddUpdateBooking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Championships\frmAddUpdateChampionship.resx">
+      <DependentUpon>frmAddUpdateChampionship.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChampionshipsEnrolledTeams\frmListTeamsInChampionship.resx">
+      <DependentUpon>frmListTeamsInChampionship.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChampionshipsEnrolledTeams\frmAddTeamsToChampionship.resx">
+      <DependentUpon>frmAddTeamsToChampionship.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Coachs\frmListCoachs.resx">
+      <DependentUpon>frmListCoachs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConstantBookings\frmAddUpdateConstantBooking.resx">
+      <DependentUpon>frmAddUpdateConstantBooking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConstantBookings\frmListConstantBookings.resx">
+      <DependentUpon>frmListConstantBookings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login\frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Teams\frmShowTeamInfo.resx">
+      <DependentUpon>frmShowTeamInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Teams\Controls\ctrlShowTeamInfo.resx">
+      <DependentUpon>ctrlShowTeamInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\frmAddUpdateUser.resx">
+      <DependentUpon>frmAddUpdateUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\frmChangePassword.resx">
+      <DependentUpon>frmChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\frmListUsers.resx">
+      <DependentUpon>frmListUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\frmShowUserInfo.resx">
+      <DependentUpon>frmShowUserInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Players\Controls\ctrlShowPlayerInfo.resx">
+      <DependentUpon>ctrlShowPlayerInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Players\frmListPlayers.resx">
+      <DependentUpon>frmListPlayers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Players\frmShowPlayerInfo.resx">
+      <DependentUpon>frmShowPlayerInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Teams\frmListTeams.resx">
+      <DependentUpon>frmListTeams.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Players\frmAddUpdatePlayer.resx">
+      <DependentUpon>frmAddUpdatePlayer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Teams\frmAddUpdateTeam.resx">
+      <DependentUpon>frmAddUpdateTeam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\Controls\ctrlShowUserInfo.resx">
+      <DependentUpon>ctrlShowUserInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Winners\frmAddShowWinner.resx">
+      <DependentUpon>frmAddShowWinner.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stadium %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stadium %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\soccer_jersey.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_config.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\achievement.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\team %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shoot.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\football-uniform.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\club.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\world-cup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\booking %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\history.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar_week %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\soccer_player.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\soccer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\achievement_add %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_info %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\users_info.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_info %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sign_out %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\team %284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coach %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\football-team.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close %2813%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\soccer-player %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coach %284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\team %285%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\soccer-player %284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\old-typical-phone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\location-pin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\team %286%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\athlete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\team %287%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coach %285%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\football-club.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\customer-review.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\celebration.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\editing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minus-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\old-typical-phone1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\id-card %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\employe-card.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user %289%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\People 400.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\congrats-congratulations.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icegif-1233.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\football-field %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pencil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\goalkeeper.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shoot %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\net.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\soccer-player %285%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\soccer-player %286%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\club %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\soccer-player %284%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\football-uniform %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\football-club %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\soccer-player %287%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\soccer-player %288%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\formation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\strategy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\football %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\partnership.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\soccer %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\partnership %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coach %286%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coach %287%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel-booking.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appointment %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\constant.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cup %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\celebration %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\championship.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\championship %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\club %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\championship %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tournament.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trophy %285%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\championship %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\soccer %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user %2813%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\information.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-avatar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete-friend.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\working.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\businessman.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hide.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\seen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shoot %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\game %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hide1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\soccer-ball.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trophy-ceremony.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FootballStadium_Bussiness\FootballStadium_Business.csproj">
+      <Project>{e9da7496-1ac5-4c8c-9daf-05e8da96dcd2}</Project>
+      <Name>FootballStadium_Business</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\active-user.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

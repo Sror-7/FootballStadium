@@ -1,0 +1,9 @@
+E:\My Project's _Programming\FootballStadium\Project\FootballStadium_Bussiness\obj\Debug\FootballStadium_Business.csproj.AssemblyReference.cache
+E:\My Project's _Programming\FootballStadium\Project\FootballStadium_Bussiness\obj\Debug\FootballStadium_Business.csproj.CoreCompileInputs.cache
+E:\My Project's _Programming\FootballStadium\Project\FootballStadium_Bussiness\bin\Debug\clsFootballStadiumBussiness.dll
+E:\My Project's _Programming\FootballStadium\Project\FootballStadium_Bussiness\bin\Debug\clsFootballStadiumBussiness.pdb
+E:\My Project's _Programming\FootballStadium\Project\FootballStadium_Bussiness\bin\Debug\FootballStadium_Data.dll
+E:\My Project's _Programming\FootballStadium\Project\FootballStadium_Bussiness\bin\Debug\FootballStadium_Data.pdb
+E:\My Project's _Programming\FootballStadium\Project\FootballStadium_Bussiness\obj\Debug\FootballStadium_Business.csproj.CopyComplete
+E:\My Project's _Programming\FootballStadium\Project\FootballStadium_Bussiness\obj\Debug\clsFootballStadiumBussiness.dll
+E:\My Project's _Programming\FootballStadium\Project\FootballStadium_Bussiness\obj\Debug\clsFootballStadiumBussiness.pdb

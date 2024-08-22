@@ -1,0 +1,12 @@
+E:\My Project's _Programming\FootballStadium\Project\FootballStadium_Data\obj\Debug\FootballStadium_DataAccess.csproj.AssemblyReference.cache
+E:\My Project's _Programming\FootballStadium\Project\FootballStadium_Data\obj\Debug\FootballStadium_DataAccess.csproj.CoreCompileInputs.cache
+E:\My Project's _Programming\FootballStadium\Project\FootballStadium_Data\bin\Debug\FootballStadium_Data.dll
+E:\My Project's _Programming\FootballStadium\Project\FootballStadium_Data\bin\Debug\FootballStadium_Data.pdb
+E:\My Project's _Programming\FootballStadium\Project\FootballStadium_Data\obj\Debug\FootballStadium_Data.dll
+E:\My Project's _Programming\FootballStadium\Project\FootballStadium_Data\obj\Debug\FootballStadium_Data.pdb
+E:\My Project's _Programming\FootballStadium\Project\FootballStadium_DataAccess\bin\Debug\FootballStadium_Data.dll
+E:\My Project's _Programming\FootballStadium\Project\FootballStadium_DataAccess\bin\Debug\FootballStadium_Data.pdb
+E:\My Project's _Programming\FootballStadium\Project\FootballStadium_DataAccess\obj\Debug\FootballStadium_DataAccess.csproj.AssemblyReference.cache
+E:\My Project's _Programming\FootballStadium\Project\FootballStadium_DataAccess\obj\Debug\FootballStadium_DataAccess.csproj.CoreCompileInputs.cache
+E:\My Project's _Programming\FootballStadium\Project\FootballStadium_DataAccess\obj\Debug\FootballStadium_Data.dll
+E:\My Project's _Programming\FootballStadium\Project\FootballStadium_DataAccess\obj\Debug\FootballStadium_Data.pdb
